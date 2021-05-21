@@ -1,0 +1,25 @@
+.header{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ECECEC;
+    
+    @media screen and (min-width:768px) {
+
+        padding-top: 0;
+        padding-bottom: 0;
+    
+    }
+}
+.header__container{
+   @extend %flex;
+    position: relative;
+    
+    @media screen and (min-width:480px) and (max-width:767px) {
+    width: 480px;}
+}
+.header__logo{
+    margin-right: 88px;
+
+    @media screen and (min-width:1200px){
+        margin-right: 93px;}
+}
