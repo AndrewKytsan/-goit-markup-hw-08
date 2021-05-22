@@ -1404,23 +1404,12 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 210px;
   height: 90px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 768px) {
-  .client__link {
-    width: 226px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .client__link {
-    width: 170px;
-  }
 }
 
 .client__link:hover,
@@ -1474,7 +1463,6 @@ ul {
 .products__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   margin-left: -30px;
   margin-bottom: -30px;
 }
@@ -1564,6 +1552,11 @@ ul {
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
+}
+@media screen and (min-width: 1200px) {
+  .products__title {
+    flex-grow: 0;
+  }
 }
 
 .products__name {
